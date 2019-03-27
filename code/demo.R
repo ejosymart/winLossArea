@@ -11,6 +11,14 @@ JR
 
 #Grafico
 cols <- rev(terrain.colors(JR@data@max+1))
-plot(JR, xlab = "Hola", ylab = "Chau", col = cols)
-# legend("topleft", c("Present", "2050", "2010","Absence"), 
-#        fill = terrain.colors(JR@data@max+1), bty = "n") 
+plot(JR, xlab = "Longitude", ylab = "Latitude", col = cols)
+
+
+
+#   -----------------------------------------------------------------------
+# AREA ESTIMATION ---------------------------------------------------------
+#   -----------------------------------------------------------------------
+library(raster)
+library(SDMTools)
+
+areaEstimationPresence(data = "data/Binario_Presente.asc", to = "km2")
