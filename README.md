@@ -1,3 +1,3 @@
 # winLossArea
 
-Code to similar to ArcGIS
+Code like ArcGIS
