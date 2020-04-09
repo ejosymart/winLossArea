@@ -22,3 +22,5 @@ library(raster)
 library(SDMTools)
 
 areaEstimationPresence(data = "data/Binario_Presente.asc", to = "km2")
+areaEstimationPresence(data = "data/Binario_2050.asc", to = "km2")
+areaEstimationPresence(data = "data/Binario_2100.asc", to = "km2")
